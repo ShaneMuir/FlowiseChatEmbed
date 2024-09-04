@@ -45,9 +45,9 @@ export type FooterTheme = {
 };
 
 export type RelevantLinksTheme = {
-    showRelevantLinksTitle: boolean;
-    message: string;
-}
+  showRelevantLinksTitle: boolean;
+  message: string;
+};
 
 export type FeedbackTheme = {
   color?: string;

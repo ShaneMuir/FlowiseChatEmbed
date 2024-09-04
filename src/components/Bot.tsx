@@ -14,14 +14,7 @@ import { BotBubble } from './bubbles/BotBubble';
 import { LoadingBubble } from './bubbles/LoadingBubble';
 import { SourceBubble } from './bubbles/SourceBubble';
 import { StarterPromptBubble } from './bubbles/StarterPromptBubble';
-import {
-  BotMessageTheme,
-  FooterTheme,
-  TextInputTheme,
-  UserMessageTheme,
-  FeedbackTheme,
-  RelevantLinksTheme,
-} from '@/features/bubble/types';
+import { BotMessageTheme, FooterTheme, TextInputTheme, UserMessageTheme, FeedbackTheme, RelevantLinksTheme } from '@/features/bubble/types';
 import { Badge } from './Badge';
 import socketIOClient from 'socket.io-client';
 import { Popup } from '@/features/popup';
@@ -226,7 +219,6 @@ const defaultWelcomeMessage = 'Hi there! How can I help?';
 
 const defaultBackgroundColor = '#ffffff';
 const defaultTextColor = '#303235';
-
 
 export const Bot = (botProps: BotProps & { class?: string }) => {
   // set a default value for showTitle if not set and merge with other props
@@ -1226,7 +1218,8 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
                                       setSourcePopupSrc(src);
                                       setSourcePopupOpen(true);
                                     }
-                                  }} />
+                                  }}
+                                />
                               );
                             }}
                           </For>
