@@ -81,7 +81,7 @@ export const Bubble = (props: BubbleProps) => {
       <div
         part="bot"
         style={{
-          height: bubbleProps.theme?.chatWindow?.height ? `${bubbleProps.theme?.chatWindow?.height.toString()}px` : 'calc(100% - 250px)',
+          height: bubbleProps.theme?.chatWindow?.height ? `${bubbleProps.theme?.chatWindow?.height.toString()}px` : 'calc(100% - 150px)',
           width: bubbleProps.theme?.chatWindow?.width ? `${bubbleProps.theme?.chatWindow?.width.toString()}px` : undefined,
           transition: 'transform 200ms cubic-bezier(0, 1.2, 1, 1), opacity 150ms ease-out',
           'transform-origin': 'bottom right',
@@ -136,7 +136,7 @@ export const Bubble = (props: BubbleProps) => {
               feedback={bubbleProps.theme?.chatWindow?.feedback}
               fontSize={bubbleProps.theme?.chatWindow?.fontSize}
               footer={bubbleProps.theme?.chatWindow?.footer}
-              relevantLinks={bubbleProps.theme?.chatWindow?.relevantLinks}
+              sourceDocsTitle={bubbleProps.theme?.chatWindow?.sourceDocsTitle}
               starterPrompts={bubbleProps.theme?.chatWindow?.starterPrompts}
               starterPromptFontSize={bubbleProps.theme?.chatWindow?.starterPromptFontSize}
               chatflowid={props.chatflowid}

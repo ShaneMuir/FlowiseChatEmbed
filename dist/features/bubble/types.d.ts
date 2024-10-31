@@ -38,10 +38,6 @@ export type FooterTheme = {
     company?: string;
     companyLink?: string;
 };
-export type RelevantLinksTheme = {
-    showRelevantLinksTitle: boolean;
-    message: string;
-};
 export type FeedbackTheme = {
     color?: string;
 };
@@ -62,7 +58,7 @@ export type ChatWindowTheme = {
     textInput?: TextInputTheme;
     feedback?: FeedbackTheme;
     footer?: FooterTheme;
-    relevantLinks?: RelevantLinksTheme;
+    sourceDocsTitle?: string;
     poweredByTextColor?: string;
     starterPrompts?: string[];
     starterPromptFontSize?: number;
